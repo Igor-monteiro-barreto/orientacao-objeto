@@ -1,6 +1,10 @@
+package Dev.Igor;
+
+import Dev.Igor.Model.Pirata;
+
 // Conceito de herança ae
-public class Akumados  extends Pirata{
-    boolean temHakiDoRei;
+public class Akumados  extends Pirata {
+
     public void userAkumados(){
         System.out.println("Usuario de akuma no mi");
         System.out.println("Esse usuario possui poderes.");

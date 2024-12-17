@@ -1,5 +1,9 @@
-public class NaoAkumado extends Pirata{
-    boolean temHakiDoRei;
+package Dev.Igor;
+
+import Dev.Igor.Model.Pirata;
+
+public class NaoAkumado extends Pirata {
+
     boolean espadachim;
     public void NaoAkumado(){
         System.out.println("Usuario não akumado, igual o zoro.");
