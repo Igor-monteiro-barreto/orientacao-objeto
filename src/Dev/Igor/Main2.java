@@ -1,8 +1,9 @@
 package Dev.Igor;
 
+import Dev.Igor.Controller.Akumados;
+import Dev.Igor.Controller.NaoAkumado;
 import Dev.Igor.Model.Marinheiros;
 import Dev.Igor.Model.Pirata;
-
 
 public class Main2 {
     public static void main(String[] args) {
@@ -26,15 +27,22 @@ public class Main2 {
         System.out.println("Meu nome é " + zoro.getNome());
         zoro.NaoAkumado();
         zoro.setTemHakiDoRei(true);
-        System.out.println("O zoro tem haki do "+zoro.getTemHakiDoRei());
-        zoro.ataqueBasico();
-        zoro.NaoAkumado(true);
+        System.out.println("O zoro tem haki do rei "+ zoro.getTemHakiDoRei());
+        zoro.setEspadachim(true);
+        System.out.println("O zoro é um espadachim " + zoro.getEspadachim());
 
         // Objeto 4
-        Marinheiros garp = new Marinheiros();
+        /* Marinheiros garp = new Marinheiros();
         garp.setCargo("Vice-Almirante");
         System.out.println("Eu sou um marinheiro e meu cargo é " + garp.getCargo());
-
+        */
+        Spandam spandam = new Spandam();
+        spandam.setNome("Spandam");
+        System.out.println("Meu nome é " + spandam.getNome());
+        spandam.ataqueObjeto();
+        spandam.ataqueCombinado();
+        spandam.setEspadachim(true);
+        System.out.println("Spandam tem uma espada akumada ");
 
     }
 }

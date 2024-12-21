@@ -1,4 +1,4 @@
-package Dev.Igor;
+package Dev.Igor.Controller;
 
 import Dev.Igor.Model.Pirata;
 
