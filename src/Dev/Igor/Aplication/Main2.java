@@ -1,9 +1,10 @@
-package Dev.Igor;
+package Dev.Igor.Aplication;
 
+import Dev.Igor.Akainu;
 import Dev.Igor.Controller.Akumados;
 import Dev.Igor.Controller.NaoAkumado;
-import Dev.Igor.Model.Marinheiros;
 import Dev.Igor.Model.Pirata;
+import Dev.Igor.Spandam;
 
 public class Main2 {
     public static void main(String[] args) {
@@ -43,6 +44,7 @@ public class Main2 {
         spandam.ataqueCombinado();
         spandam.setEspadachim(true);
         System.out.println("Spandam tem uma espada akumada ");
+
 
     }
 }
