@@ -1,9 +1,19 @@
 package Dev.Igor.Model;
 
+import Dev.Igor.Cargos;
+
 public abstract class Marinheiros {
     private String nome;
-    private String cargo;
     private int idade;
+    private Cargos cargo;
+
+    public Cargos getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(Cargos cargo) {
+        this.cargo = cargo;
+    }
 
     public String getNome() {
         return nome;
@@ -13,13 +23,6 @@ public abstract class Marinheiros {
         this.nome = nome;
     }
 
-    public String getCargo() {
-        return cargo;
-    }
-
-    public void setCargo(String cargo) {
-        this.cargo = cargo;
-    }
 
     public int getIdade() {
         return idade;
@@ -27,6 +30,9 @@ public abstract class Marinheiros {
 
     public void setIdade(int idade) {
         this.idade = idade;
+    }
+    public void exibirInfo(){
+        System.out.println("Meu nome é "+ nome + " e meu cargo é " + cargo);
     }
 
     public void capituraPiraata(){
